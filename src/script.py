@@ -11,7 +11,7 @@ import requests
 ######################
 
 # Path to Federated Catalogue signer
-jar_path = 'src/signer.jar'
+jar_path = 'src/resources/signer.jar'
 
 # Keycloak parameters
 kc_url = "KC_URL/realms/gaia-x/protocol/openid-connect/token"
