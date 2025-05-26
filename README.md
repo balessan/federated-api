@@ -15,3 +15,8 @@ Before using the script, you must fill the necessary variables found in the `REQ
 To launch the script, use the following command (assuming you are at the root of this repository) :
 
 `python3 src/script.py -sd {path-to-your-self-description} -c {path-to-your-prk-pem}`
+
+Test the get requests : python3 src/get.py 
+Upload a file : python3 src/script.py -prk prk.ss.pem -sd template.json
+
+

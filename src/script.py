@@ -14,16 +14,16 @@ import requests
 jar_path = 'src/resources/signer.jar'
 
 # Keycloak parameters
-kc_url = "KC_URL/realms/gaia-x/protocol/openid-connect/token"
+kc_url = "http://51.159.145.175:80/auth/realms/gaia-x/protocol/openid-connect/token"
 kc_client_id = "federated-catalogue"
-kc_client_secret = ""
-kc_username = ""
-kc_password = ""
+kc_client_secret = "QQ5s1NEc4so3bzdPWaSc71ehq6PLrq1y"
+kc_username = "test"
+kc_password = "Testtest1!"
 kc_grant_type = "password"
 kc_scope = "openid"
 
 # Federated Catalogue parameters
-fc_url = "FC_URL/self-descriptions"
+fc_url = "http://51.159.145.175/api/self-descriptions"
 
 
 ###########

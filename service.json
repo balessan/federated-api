@@ -1,0 +1,54 @@
+{
+  "@id": "http://example.edu/verifiablePresentation/self-description1",
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "verifiableCredential": {
+    "issuanceDate": "2022-10-19T18:48:09Z",
+    "credentialSubject": {
+      "gax-trust-framework:policy": "list of policy",
+      "gax-trust-framework:serviceTitle": "Software Title",
+      "dcat:keyword": [
+        "Keyword1_1",
+        "Keyword1_2",
+        "Keyword1_3",
+        "Keyword1_4",
+        "Keyword1_5",
+        "Keyword1_6",
+        "Keyword1_7"
+      ],
+      "@type": "gax-trust-framework:ServiceOffering",
+      "gax-core:offeredBy": {
+        "@id": "https://www.example.org/Provider1.json"
+      },
+      "@id": "https://www.example.org/mySoftwareOffering",
+      "@context": {
+        "gax-trust-framework": "https://w3id.org/gaia-x/gax-trust-framework#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "gax-core": "https://w3id.org/gaia-x/core#"
+      },
+      "gax-trust-framework:dataAccountExport": {
+        "gax-trust-framework:formatType": "application/gzip",
+        "@type": "gax-trust-framework:DataAccountExport",
+        "gax-trust-framework:accessType": "digital",
+        "gax-trust-framework:requestType": "API"
+      },
+      "gax-trust-framework:termsAndConditions": {
+        "gax-trust-framework:content": {
+          "@value": "http://example.org/tac",
+          "@type": "xsd:anyURI"
+        },
+        "@type": "gax-trust-framework:TermsAndConditions",
+        "gax-trust-framework:hash": "1234"
+      }
+    },
+    "@type": [
+      "VerifiableCredential"
+    ],
+    "@id": "https://www.example.org/SoftwareOffering.json"
+  }
+}
