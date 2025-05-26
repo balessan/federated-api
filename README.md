@@ -16,6 +16,8 @@ To launch the script, use the following command (assuming you are at the root of
 
 `python3 src/script.py -sd {path-to-your-self-description} -c {path-to-your-prk-pem}`
 
+# Pour benoit
+
 Test the get requests : python3 src/get.py   
 Upload a file : python3 src/script.py -prk prk.ss.pem -sd template.json  
 
