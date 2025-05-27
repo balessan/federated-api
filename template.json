@@ -1,18 +1,10 @@
 {
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1"
-  ],
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
   "id": "http://example.org/presentations/3731",
-  "type": [
-    "VerifiablePresentation"
-  ],
+  "type": ["VerifiablePresentation"],
   "verifiableCredential": {
-    "@context": [
-      "https://www.w3.org/2018/credentials/v1"
-    ],
-    "@type": [
-      "VerifiableCredential"
-    ],
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
+    "@type": ["VerifiableCredential"],
     "issuer": "http://gaiax.de",
     "issuanceDate": "2022-10-19T18:48:09Z",
     "expirationDate": "2034-01-23T11:29:40Z",
