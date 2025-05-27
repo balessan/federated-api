@@ -20,7 +20,7 @@
         "gax-trust-framework": "https://w3id.org/gaia-x/gax-trust-framework#",
         "xsd": "http://www.w3.org/2001/XMLSchema#"
       },
-      "@id": "http://localhost:8192/examples/data/catalog/catalog-connector.jsonld",
+      "@id": "http://localhost:8192/examples/data/catalog/catalog-connector1.jsonld",
       "@type": "gax-trust-framework:Resource",
       "gax-core:offeredBy": {
         "@id": "gax-trust-framework:Provider1"
