@@ -18,7 +18,7 @@ To launch the script, use the following command (assuming you are at the root of
 
 # For whoever wishes to play with the current staging instance
 
-Test the get requests : python3 src/get.py   
-Upload a file : python3 src/script.py -prk prk.ss.pem -sd template.json  
+Test the get requests : `python3 src/get.py`
+Upload a file : `python3 src/script.py -prk prk.ss.pem -sd template.json`
 
 
