@@ -132,7 +132,7 @@ def main():
     print(json.dumps(post_query_search("MATCH (n) RETURN n LIMIT 5"), indent=2))
     
     # Example GET /self-descriptions/HASH
-    print("\Getting a specific SD by hash...")
+    print("\nGetting a specific SD by hash...")
     print(json.dumps(get_self_description_by_hash("f5f806698792da113b19c43b45ead220036a6caf8f9963f0068e821afc5d6135"), indent=2))
 
     return 0
