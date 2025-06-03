@@ -1,0 +1,134 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "id": "http://example.org/presentations/3734",
+  "type": ["VerifiablePresentation"],
+  "verifiableCredential": {
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
+    "@type": ["VerifiableCredential"],
+    "issuer": "http://gaiax.de",
+    "issuanceDate": "2022-10-19T18:48:09Z",
+    "expirationDate": "2034-01-23T11:29:40Z",
+    "credentialSubject": {
+      "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "dspace": "https://w3id.org/dspace/v0.8/",
+        "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+        "edc": "https://w3id.org/edc/v0.0.1/ns/",
+        "gax-core": "https://w3id.org/gaia-x/core#",
+        "gax-trust-framework": "https://w3id.org/gaia-x/gax-trust-framework#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "tc": "http://tems.org/2024/temscore#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+      },
+      "@id": "http://localhost:8192/examples/data/catalog/catalog-connector4.jsonld",
+      "@type": "gax-trust-framework:Resource",
+      "gax-core:offeredBy": {
+        "@id": "gax-trust-framework:Provider1"
+      },
+      "gax-core:operatedBy": {
+        "@id": "gax-trust-framework:Provider1"
+      },
+      "gax-trust-framework:termsAndConditions": {
+        "@type": "gax-trust-framework:TermsAndConditions",
+        "gax-trust-framework:content": {
+          "@type": "xsd:anyURI",
+          "@value": "http://example.org/tac"
+        },
+        "gax-trust-framework:hash": "1234"
+      },
+      "gax-trust-framework:policy": "www.example.org/ServicePolicy",
+      "gax-trust-framework:dataAccountExport": {
+        "@type": "gax-trust-framework:DataAccountExport",
+        "gax-trust-framework:accessType": "access type",
+        "gax-trust-framework:formatType": "format type",
+        "gax-trust-framework:requestType": "request type"
+      },
+      "dcat:dataset": {
+        "@id": "287b2544-5763-4515-899b-aa6f3103783e",
+        "@type": "dcat:Dataset",
+        "odrl:hasPolicy": {
+          "@id": "YXJjdHVyLWRhdGFzZXQtb2ZmZXJpbmc=:Mjg3YjI1NDQtNTc2My00NTE1LTg5OWItYWE2ZjMxMDM3ODNl:Mjg0OWNhNWMtNGY3Yi00ZTEwLWJhZTMtODA2YTc3MjE4ODAy",
+          "@type": "odrl:Offer",
+          "odrl:permission": {
+            "odrl:action": {
+              "@id": "odrl:use"
+            }
+          },
+          "odrl:prohibition": [],
+          "odrl:obligation": []
+        },
+        "dcat:distribution": [
+          {
+            "@type": "dcat:Distribution",
+            "dct:format": {
+              "@id": "HttpData-PULL"
+            },
+            "dcat:accessService": {
+              "@id": "4d7ee8b3-3daf-423e-9bd7-591fb002cb59",
+              "@type": "dcat:DataService",
+              "dcat:endpointDescription": "dspace:connector",
+              "dcat:endpointUrl": "http://localhost:8082/api/dsp",
+              "dcat:endpointURL": "http://localhost:8082/api/dsp"
+            }
+          },
+          {
+            "@type": "dcat:Distribution",
+            "dct:format": {
+              "@id": "HttpData-PUSH"
+            },
+            "dcat:accessService": {
+              "@id": "4d7ee8b3-3daf-423e-9bd7-591fb002cb59",
+              "@type": "dcat:DataService",
+              "dcat:endpointDescription": "dspace:connector",
+              "dcat:endpointUrl": "http://localhost:8082/api/dsp",
+              "dcat:endpointURL": "http://localhost:8082/api/dsp"
+            }
+          }
+        ],
+        "dcat:service": {
+            "@type": [
+                "dcat:DataService"
+            ],
+            "@id": "urn:uuid:tamis-media-catalog-service-france-televisions-studio",
+            "dcterms:title": "Access to the Media Catalog of France Télévisions Studio",
+            "rdfs:comment": "This offer will allow the access to the media catalog of France Télévisions Studio.",
+            "dcat:keyword": [
+                "TAMIS",
+                "Media Catalog"
+            ],
+            "dcat:version": "0.1.0",
+            "dcterms:creator": {
+                "@type": [
+                    "foaf:Organization",
+                    "prov:Agent"
+                ],
+                "foaf:name": "France Télévisions Studio",
+                "foaf:thumbnail": {
+                    "rdf:resource": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d0/Logo_France_TV_Studio_-_2018.svg/330px-Logo_France_TV_Studio_-_2018.svg.png"
+                }
+            },
+            "dcterms:temporal": "http://reference.data.gov.uk/id/year/2025",
+            "dcat:endpointURL": "http://sample.francetv.fr/",
+            "dcat:endpointDescription": "http://sample.francetv.fr/open-api/documentation.json",
+            "foaf:thumbnail": {
+                "rdf:resource": "https://data.davidstephenson.net/posts/jellyfin-splash-screen-psa/header.webp"
+            }
+        }
+      },
+      "dcat:distribution": [],
+      "dcat:service": {
+        "@id": "4d7ee8b3-3daf-423e-9bd7-591fb002cb59",
+        "@type": "dcat:DataService",
+        "dcat:endpointDescription": "dspace:connector",
+        "dcat:endpointUrl": "http://localhost:8082/api/dsp",
+        "dcat:endpointURL": "http://localhost:8082/api/dsp"
+      },
+      "dspace:participantId": "did:web:localhost%3A7083"
+    }
+  }
+}

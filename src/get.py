@@ -119,21 +119,22 @@ def post_query_search(statement, parameters=None, query_language="OPENCYPHER", a
 
 
 def main():
+    # print(get_auth_token())
     # Exemple d'utilisation
     print("Listing Self-Descriptions:")
     print(json.dumps(get_all_self_descriptions(), indent=2)) #ok
 
     # Example POST /query
-    print("\nSending query...")
-    print(json.dumps(post_query("MATCH (n) RETURN n LIMIT 5"), indent=2)) #ok
+    # print("\nSending query...")
+    # print(json.dumps(post_query("MATCH (n) RETURN n LIMIT 5"), indent=2)) #ok
 
-    # Example POST /query/search
-    print("\nSending distributed search...")
-    print(json.dumps(post_query_search("MATCH (n) RETURN n LIMIT 5"), indent=2))
+    # # Example POST /query/search
+    # print("\nSending distributed search...")
+    # print(json.dumps(post_query_search("MATCH (n) RETURN n LIMIT 5"), indent=2))
     
     # Example GET /self-descriptions/HASH
     print("\nGetting a specific SD by hash...")
-    print(json.dumps(get_self_description_by_hash("f5f806698792da113b19c43b45ead220036a6caf8f9963f0068e821afc5d6135"), indent=2))
+    print(json.dumps(get_self_description_by_hash("cb2d98d82764da8788e740911784fce612592af399cd483789d412dc6ae2cc5d"), indent=2))
 
     return 0
 
